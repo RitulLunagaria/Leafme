@@ -11,6 +11,7 @@ public class CorsConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .allowedOrigins(
+                        "https://frontendleafme.vercel.app", // Vercel frontend
                         "http://localhost:5173",   // Vite
                         "http://localhost:3000"    // CRA (optional)
                 )
